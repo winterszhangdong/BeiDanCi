@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FUCK THE 単语！</title>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/icheck.min.js"></script>
+    <script type="text/javascript" src="static/js/plugins.js"></script>
+    <script type="text/javascript" src="static/js/buttons.js"></script>
+    <script type="text/javascript" src="static/js/wordlist.js"></script>
+    <script type="text/javascript" src="static/js/review.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/plugins/polaris/polaris.css">
+    <link rel="stylesheet" type="text/css" href="static/css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="lesson" class="col-md-12">
+            <h2>你想背哪几课的单词？</h2>
+            <ul id="lesson_select">
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson1"><label for="lesson1">第1课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson2"><label for="lesson2">第2课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson3"><label for="lesson3">第3课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson4"><label for="lesson4">第4课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson5"><label for="lesson5">第5课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson6"><label for="lesson6">第6课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson7"><label for="lesson7">第7课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson8"><label for="lesson8">第8课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson9"><label for="lesson9">第9课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson10"><label for="lesson10">第10课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson11"><label for="lesson11">第11课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson12"><label for="lesson12">第12课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson13"><label for="lesson13">第13课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson14"><label for="lesson14">第14课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson15"><label for="lesson15">第15课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson16"><label for="lesson16">第16课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson17"><label for="lesson17">第17课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson18"><label for="lesson18">第18课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson19"><label for="lesson19">第19课</label></li>
+                <li><input type="checkbox" class="lesson_checkbox" id="lesson20"><label for="lesson20">第20课</label></li>
+                <div class="clearfix"></div>
+            </ul>
+
+            <div id="selectall"><a class="button button-pill">全/反选</a></div>
+            <!-- <button id="unselectall" class="button button-flat">反选</button> -->
+            <div class="clearfix"></div>
+            <div id="submit_lesson">
+                <a href="#"class="button button-3d-highlight button-circle">提交</a>
+            </div>
+
+        </div>
+
+        <div id="count" class="col-md-3">0</div>
+        <div id="review" class="col-md-8 col-md-offset-3">
+        <!-- <div id="review" class="col-md-9"> -->
+
+            <ul>
+                <li>意味: <span id="meaning">你好</span></li>
+                <li>単语: <span id="word" class="mask">こんにちは</span></li>
+                <li>発音: <span id="pronunciation" class="mask">こんにちは</span></li>
+                <li>品词: <span id="type" class="mask">寒暄语</span></li>
+                <li>
+                    <div class="btn-group btn-group-bg">
+                        <button id="show" class="button button-3d-primary button-rounded">这你都不会？</button>
+                    </div>
+
+                    <div class="btn-group btn-group-bg">
+                        <button id="next" class="button button-3d-action button-rounded">太简单了！</button>
+                    </div>
+
+                    <br />                    
+                    <div class="btn-group btn-group-bg">
+                        <button id="add" class="button button-3d-caution button-rounded">太特么难，加生词本！</button>
+                    </div>
+
+                    <div class="btn-group btn-group-bg">
+                        <a href="new_words.html"><button id="new_words" class="button button-3d-royal button-rounded">看看俺的生词本</button></a>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
